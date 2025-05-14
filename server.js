@@ -91,6 +91,14 @@ app.post("/new", (request, response) => {
   response.redirect("/success")
 })
 
+app.get("/turbo-frame-replace", (request, response) => {
+  response.render("turbo-frame-replace", { title: "Turbo Frame Replace" })
+})
+
+app.get("/turbo-frame-replaced", (request, response) => {
+  response.render("turbo-frame-replaced", { title: "Turbo Frame Replaced" })
+})
+
 app.get("/strada-form", (request, response) => {
   response.render("strada-form", { title: "Strada" })
 })

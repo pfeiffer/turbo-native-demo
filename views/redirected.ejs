@@ -1,2 +1,16 @@
 <h1 class="page-title">Redirected Page</h1>
 <p>This page is the result of a redirect. The original destination has been replaced with this page.</p>
+
+<form
+  method="post"
+  data-controller="bridge--form"
+  data-action="turbo:submit-start->bridge--form#submitStart turbo:submit-end->bridge--form#submitEnd">
+
+  <button
+    class="button"
+    type="submit"
+    data-bridge--form-target="submit"
+    data-bridge-title="Submit">
+    Submit Form
+  </button>
+</form>

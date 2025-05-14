@@ -1,0 +1,19 @@
+<turbo-frame id="turbo-frame-replace">
+  <p>Here's the content - it contains a Strada Form component as well, which should show a native Submit button.</p>
+
+  <form
+    method="post"
+    data-controller="bridge--form"
+    data-action="turbo:submit-start->bridge--form#submitStart turbo:submit-end->bridge--form#submitEnd">
+
+    <button
+      class="button"
+      type="submit"
+      data-bridge--form-target="submit"
+      data-bridge-title="Submit">
+      Submit Form
+    </button>
+  </form>
+
+  <p>It should also support refreshing this page with pull-to-refresh.</p>
+</turbo-frame>
